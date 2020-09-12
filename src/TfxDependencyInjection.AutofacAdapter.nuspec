@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>TfxDependencyInjection.AutofacAdapter</id>
+    <version>1.0.0</version>
+    <title>TFX Library: Dependency Injection</title>
+    <description>TFX Library: Dependency Injection</description>
+    <authors>T-Force Xyz</authors>
+    <owners>T-Force Xyz</owners>
+    <copyright>T-Force Xyz</copyright>
+    <licenseUrl>https://github.com/tforcexyz/tfxlib-di/blob/master/LICENSE</licenseUrl>
+    <releaseNotes>https://github.com/tforcexyz/tfxlib-di/blob/master/RELEASE</releaseNotes>
+    <iconUrl>https://github.com/tforcexyz/tfxlib-di/blob/master/package_icon.png</iconUrl>
+    <projectUrl>https://github.com/tforcexyz/tfxlib-di/</projectUrl>
+    <repository url="https://github.com/tforcexyz/tfxlib-di/" type="git" />
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags></tags>
+    <dependencies>
+      <group>
+        <dependency id="Autofac" version="4.0.0" />
+        <dependency id="Tfx" version="[1.0,2.0)" />
+        <dependency id="TfxDependencyInjection" version="[1.0,2.0)" />
+      </group>
+      <group targetFramework=".NETFramework4.5" />
+      <group targetFramework="netstandard2.0" />
+    </dependencies>
+    </metadata>
+  <files>
+    <file src="TfxDependencyInjection.AutofacAdapter\bin\Release\**\TfxDependencyInjection.AutofacAdapter.dll" target="lib/" />
+  </files>
+</package>
