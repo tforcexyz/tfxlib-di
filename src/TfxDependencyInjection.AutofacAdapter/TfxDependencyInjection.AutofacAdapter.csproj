@@ -27,6 +27,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TfxDependencyInjection\TfxDependencyInjection.csproj" />
+    <PackageReference Include="Autofac" Version="4.0.0" />
     <PackageReference Include="Tfx" Version="1.0.0" />
   </ItemGroup>
 
