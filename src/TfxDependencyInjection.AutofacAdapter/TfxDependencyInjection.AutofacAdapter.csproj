@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net45;netstandard2.0</TargetFrameworks>
+    <RootNamespace>Xyz.TForce.DependencyInjection.AutofacAdapter</RootNamespace>
+    <Authors>T-Force Xyz</Authors>
+    <Company>T-Force Xyz</Company>
+    <Copyright>T-Force Xyz</Copyright>
+    <Product>TFX Library: Dependency Injection</Product>
+    <Description>TFX Library: Dependency Injection</Description>
+    <PackageLicenseUrl>https://github.com/tforcexyz/tfxlib-di/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageReleaseNotes>https://github.com/tforcexyz/tfxlib-di/blob/master/RELEASE</PackageReleaseNotes>
+    <PackageIconUrl>https://github.com/tforcexyz/tfxlib-di/blob/master/package_icon.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/tforcexyz/tfxlib-di/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/tforcexyz/tfxlib-di/</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <SignAssembly>false</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <Version>1.0.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>$(StrongNameKeyFilePath)</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Tfx" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net45'">
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+  </ItemGroup>
+
+</Project>
