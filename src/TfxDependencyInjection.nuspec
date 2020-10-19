@@ -21,6 +21,7 @@
       </group>
       <group targetFramework="netstandard2.0" >
         <dependency id="Tfx" version="[1.0,2.0)" />
+      </group>
     </dependencies>
     </metadata>
   <files>

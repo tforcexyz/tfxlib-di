@@ -16,8 +16,6 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags></tags>
     <dependencies>
-      <group>
-      </group>
       <group targetFramework=".NETFramework4.5" >
         <dependency id="Autofac" version="4.0.0" />
         <dependency id="Tfx" version="[1.0,2.0)" />
