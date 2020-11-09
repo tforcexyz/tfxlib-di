@@ -39,8 +39,8 @@ namespace Xyz.TForce.DependencyInjection
           {
             switch (autoInjectParameter.LifetimeScope)
             {
-              case LifetimeScope.Scope:
-                registrar.Register(serviceType, type, new RegisterOptions { LifetimeScope = LifetimeScope.Scope });
+              case LifetimeScope.Scoped:
+                registrar.Register(serviceType, type, new RegisterOptions { LifetimeScope = LifetimeScope.Scoped });
                 break;
               case LifetimeScope.Singleton:
                 registrar.Register(serviceType, type, new RegisterOptions { LifetimeScope = LifetimeScope.Singleton });
@@ -55,8 +55,8 @@ namespace Xyz.TForce.DependencyInjection
         {
           switch (autoInjectParameter.LifetimeScope)
           {
-            case LifetimeScope.Scope:
-              registrar.Register(type, new RegisterOptions { LifetimeScope = LifetimeScope.Scope });
+            case LifetimeScope.Scoped:
+              registrar.Register(type, new RegisterOptions { LifetimeScope = LifetimeScope.Scoped });
               break;
             case LifetimeScope.Singleton:
               registrar.Register(type, new RegisterOptions { LifetimeScope = LifetimeScope.Singleton });
