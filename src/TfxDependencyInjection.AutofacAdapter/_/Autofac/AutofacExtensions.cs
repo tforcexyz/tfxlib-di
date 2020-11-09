@@ -16,15 +16,15 @@
 using System;
 using System.Linq;
 using System.Reflection;
-using Autofac;
+using Xyz.TForce.DependencyInjection;
 
-namespace Xyz.TForce.DependencyInjection
+namespace Autofac
 {
 
   public static class AutofacExtensions
   {
 
-    public static void RegisterAssembly(this ContainerBuilder builder, Assembly assembly)
+    public static void RegisterAutoInjectClasses(this ContainerBuilder builder, Assembly assembly)
     {
       Type[] autoInjectTypes = assembly.ExportedTypes
           .Where(x => { return Attribute.IsDefined(x, typeof(AutoInjectAttribute)); })
