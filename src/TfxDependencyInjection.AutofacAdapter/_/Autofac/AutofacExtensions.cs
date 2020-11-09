@@ -38,7 +38,7 @@ namespace Autofac
         {
           switch (autoInjectParameter.LifetimeScope)
           {
-            case LifetimeScope.Scope:
+            case LifetimeScope.Scoped:
               _ = builder.RegisterType(type)
                 .As(serviceTypes)
                 .InstancePerLifetimeScope();
@@ -59,7 +59,7 @@ namespace Autofac
         {
           switch (autoInjectParameter.LifetimeScope)
           {
-            case LifetimeScope.Scope:
+            case LifetimeScope.Scoped:
               _ = builder.RegisterType(type)
                 .InstancePerLifetimeScope();
               break;

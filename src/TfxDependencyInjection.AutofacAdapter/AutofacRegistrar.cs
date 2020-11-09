@@ -50,7 +50,7 @@ namespace Xyz.TForce.DependencyInjection.AutofacAdapter
           case LifetimeScope.Singleton:
             _ = registrationBuilder.SingleInstance();
             break;
-          case LifetimeScope.Scope:
+          case LifetimeScope.Scoped:
             _ = registrationBuilder.InstancePerLifetimeScope();
             break;
           case LifetimeScope.Transient:
@@ -71,7 +71,7 @@ namespace Xyz.TForce.DependencyInjection.AutofacAdapter
           case LifetimeScope.Singleton:
             _ = registrationBuilder.SingleInstance();
             break;
-          case LifetimeScope.Scope:
+          case LifetimeScope.Scoped:
             _ = registrationBuilder.InstancePerLifetimeScope();
             break;
           case LifetimeScope.Transient:
@@ -97,7 +97,7 @@ namespace Xyz.TForce.DependencyInjection.AutofacAdapter
           case LifetimeScope.Singleton:
             _ = registrationBuilder.SingleInstance();
             break;
-          case LifetimeScope.Scope:
+          case LifetimeScope.Scoped:
             _ = registrationBuilder.InstancePerLifetimeScope();
             break;
           case LifetimeScope.Transient:
